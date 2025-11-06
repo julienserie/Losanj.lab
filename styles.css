@@ -344,6 +344,7 @@ nav {
     margin-bottom: 25px;
     line-height: 1.8;
     font-weight: 300;
+    text-align: center;
 }
 
 .about-text .intro {
@@ -351,6 +352,7 @@ nav {
     color: var(--text-dark);
     margin-bottom: 30px;
     font-weight: 400;
+    text-align: center;
 }
 
 /* Contact Section */
