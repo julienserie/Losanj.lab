@@ -150,7 +150,105 @@ Création d'un site vitrine professionnel pour **Losanj Lab** - Collectif de com
 
 ---
 
-## Configuration à venir (en attente activation OVH)
+## Session du 7 novembre 2025 - Email et finalisation
+
+### Configuration email professionnelle ✅
+
+**Email créé :** contact@losanj-lab.com
+
+**1. Compte Zimbra Starter (OVH)**
+- URL webmail : https://mail.ovh.net/zimbra/
+- Compte créé : contact@losanj-lab.com
+- Capacité : 5 Go
+- Serveur SMTP : ssl0.ovh.net:465 (SSL)
+- Serveur IMAP : ssl0.ovh.net:993 (SSL)
+
+**2. Configuration Gmail - Envoi**
+- Gmail configuré pour **envoyer** des emails depuis contact@losanj-lab.com
+- Paramètres → Comptes et importation → Envoyer des e-mails en tant que
+- SMTP : ssl0.ovh.net, port 465, SSL activé
+- Adresse validée et fonctionnelle ✅
+
+**3. Configuration Gmail - Réception**
+- **Filtre Zimbra** créé pour transférer TOUS les emails vers losanj.lab@gmail.com
+- **Suppression automatique** des emails dans Zimbra (pas de stockage)
+- Nom du filtre : "Transfert vers Gmail"
+- Condition : De / contient / [vide] (tous les emails)
+- Actions :
+  1. Rediriger vers l'adresse → losanj.lab@gmail.com
+  2. Détruire (suppression automatique)
+
+**4. Configuration Gmail - Réponse automatique**
+- Paramètre activé : "Répondre depuis la même adresse à laquelle le message a été envoyé"
+- Quand on répond à un email reçu sur contact@losanj-lab.com, la réponse part automatiquement de contact@losanj-lab.com
+
+**5. Signature email Gmail**
+- Signature professionnelle créée dans Gmail pour contact@losanj-lab.com
+- À personnaliser selon les besoins
+
+**Résultat final :**
+- ✅ Envoi depuis contact@losanj-lab.com via Gmail
+- ✅ Réception dans Gmail (losanj.lab@gmail.com)
+- ✅ Réponse automatique depuis la bonne adresse
+- ✅ Aucun stockage dans Zimbra (tout dans Gmail)
+- ✅ Interface Gmail unique pour tout gérer
+
+### HTTPS activé ✅
+
+**Certificat SSL GitHub Pages**
+- Enforce HTTPS activé dans Settings → Pages
+- Certificat généré automatiquement par GitHub
+- https://www.losanj-lab.com → HTTP/2 200 OK ✅
+- http://www.losanj-lab.com → 301 redirect vers HTTPS ✅
+- https://losanj-lab.com → 301 redirect vers www ✅
+
+**Vérification :**
+```bash
+curl -I https://www.losanj-lab.com
+# HTTP/2 200
+# server: GitHub.com
+# ✅ SSL actif et fonctionnel
+```
+
+### Logo intégré ✅
+
+**Fichier ajouté :** logo.png (150 KB)
+- Design : Carré orange sur fond bleu (géométrique moderne)
+- Source : /Users/julienserie/Downloads/Losanj Lab_logo.png
+
+**Intégrations :**
+1. **Navigation (navbar)** :
+   - Logo affiché à gauche avec texte "LOSANJ LAB"
+   - Hauteur : 40px (desktop), 30px (mobile)
+   - Espacement élégant (12px gap)
+
+2. **Favicon** :
+   - Icône dans l'onglet du navigateur
+   - `<link rel="icon" type="image/png" href="logo.png">`
+
+**Fichiers modifiés :**
+- `index.html` : Structure logo + favicon
+- `styles.css` : Styles responsive pour logo
+- Commit : c7c14c0
+
+### Mise à jour email sur le site ✅
+
+**Changement effectué :**
+- losanj.lab@gmail.com → **contact@losanj-lab.com**
+
+**Fichiers modifiés :**
+- `index.html` (ligne 177) : mailto et texte affiché
+- `README.md` : Section contact
+- Commit : 5f21897
+
+### Suppression compte Netlify ✅
+
+**Action :** Compte Netlify supprimé par l'utilisateur
+**Raison :** Migration vers GitHub Pages (gratuit et illimité)
+
+---
+
+## Configuration à venir (en attente activation OVH) - COMPLÉTÉ ✅
 
 ### Étape 3 : Configuration DNS
 
@@ -225,16 +323,17 @@ Création d'un site vitrine professionnel pour **Losanj Lab** - Collectif de com
 
 ```
 Losanj.lab/
-├── index.html              # Page principale (12 KB)
-├── styles.css              # Styles minimalistes (9.5 KB)
-├── script.js               # Interactions (2.8 KB)
-├── translations.js         # i18n FR/EN (7.3 KB)
-├── README.md               # Documentation
-├── CLAUDE.md               # Historique développement (ce fichier)
-├── .gitignore              # Exclusions Git
-├── mcdonalds-sonic-happy-meal.mp4       (16.5 MB)
-├── krys-la-rencontre.mp4                (15.7 MB)
-└── grtgaz-transition-energetique.mp4    (17.1 MB)
+├── index.html                           # Page principale (12 KB)
+├── styles.css                           # Styles minimalistes (10 KB)
+├── script.js                            # Interactions (2.8 KB)
+├── translations.js                      # i18n FR/EN (7.3 KB)
+├── logo.png                             # Logo Losanj Lab (150 KB)
+├── README.md                            # Documentation
+├── CLAUDE.md                            # Historique développement (ce fichier)
+├── .gitignore                           # Exclusions Git
+├── mcdonalds-sonic-happy-meal.mp4       # (16.5 MB)
+├── krys-la-rencontre.mp4                # (15.7 MB)
+└── grtgaz-transition-energetique.mp4    # (17.1 MB)
 ```
 
 ### Fonctionnalités implémentées
@@ -307,14 +406,17 @@ aa216fb - Remove justified text alignment on mobile
 
 ## Prochaines sessions
 
-### À faire immédiatement (attente OVH)
+### ✅ Configuration initiale - COMPLÉTÉE
 
-- [ ] Vérifier activation domaine losanj-lab.com dans "Mes offres & services"
-- [ ] Configurer DNS zone OVH pour pointer vers GitHub Pages
-- [ ] Ajouter custom domain dans GitHub Pages settings
-- [ ] Activer HTTPS forcé sur GitHub Pages
-- [ ] Configurer email contact@losanj-lab.com
-- [ ] Tester envoi/réception email
+- [✅] Vérifier activation domaine losanj-lab.com dans "Mes offres & services"
+- [✅] Configurer DNS zone OVH pour pointer vers GitHub Pages
+- [✅] Ajouter custom domain dans GitHub Pages settings
+- [✅] Activer HTTPS forcé sur GitHub Pages
+- [✅] Configurer email contact@losanj-lab.com
+- [✅] Tester envoi/réception email
+- [✅] Intégrer logo dans navigation et favicon
+- [✅] Mettre à jour adresse email sur le site
+- [✅] Supprimer compte Netlify
 
 ### Améliorations futures possibles
 
@@ -333,7 +435,8 @@ aa216fb - Remove justified text alignment on mobile
 - [ ] Mode sombre (toggle optionnel)
 
 **Contenu :**
-- [ ] Remplacer losanj.lab@gmail.com par contact@losanj-lab.com
+- [✅] Remplacer losanj.lab@gmail.com par contact@losanj-lab.com
+- [✅] Intégrer logo Losanj Lab
 - [ ] Ajouter photos membres du collectif
 - [ ] Enrichir section "À Propos"
 - [ ] Ajouter témoignages clients
