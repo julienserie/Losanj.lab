@@ -22,18 +22,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Email obfuscation (anti-spam bot protection)
-document.addEventListener('DOMContentLoaded', () => {
-    // Decode and display email
-    const emailLink = document.getElementById('contact-email');
-    if (emailLink) {
-        const parts = ['contact', 'losanj-lab', 'com'];
-        const email = parts[0] + '@' + parts[1] + '.' + parts[2];
-        emailLink.href = 'mailto:' + email;
-        emailLink.textContent = email;
-    }
-});
-
 // Video lazy loading
 document.addEventListener('DOMContentLoaded', () => {
     const videos = document.querySelectorAll('video');
