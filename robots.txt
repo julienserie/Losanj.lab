@@ -1,0 +1,7 @@
+# robots.txt for Losanj Lab
+# https://www.losanj-lab.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.losanj-lab.com/sitemap.xml

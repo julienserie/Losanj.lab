@@ -123,6 +123,7 @@ function setLanguage(lang) {
     document.documentElement.lang = lang;
     updatePageContent(lang);
     updateLanguageButton(lang);
+    updateMetaTags(lang);
 }
 
 function updatePageContent(lang) {
@@ -144,6 +145,59 @@ function updateLanguageButton(lang) {
             btn.classList.remove('active');
         }
     });
+}
+
+function updateMetaTags(lang) {
+    const metaTags = {
+        fr: {
+            title: 'Losanj Lab - Compositeur(ice)s de musiques originales pour TV, publicité, films et séries',
+            description: 'Compositeur(ice)s de musiques originales pour TV, publicité, films et séries. Portfolio : McDonald\'s, Krys, NATRAN. Collectif de compositeurs professionnels.',
+            ogTitle: 'Losanj Lab - Compositeur(ice)s de musiques originales',
+            ogDescription: 'Compositeur(ice)s de musiques originales pour TV, publicité, films et séries. Portfolio : McDonald\'s, Krys, NATRAN.'
+        },
+        en: {
+            title: 'Losanj Lab - Songwriting and production lab for TV, advertising, film & series',
+            description: 'Songwriting and production lab for TV, advertising, film & series. Portfolio: McDonald\'s, Krys, NATRAN. Professional music composers collective.',
+            ogTitle: 'Losanj Lab - Songwriting and production lab',
+            ogDescription: 'Songwriting and production lab for TV, advertising, film & series. Portfolio: McDonald\'s, Krys, NATRAN.'
+        }
+    };
+
+    // Update title
+    document.title = metaTags[lang].title;
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        metaDescription.setAttribute('content', metaTags[lang].description);
+    }
+
+    // Update Open Graph title
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+        ogTitle.setAttribute('content', metaTags[lang].ogTitle);
+    }
+
+    // Update Open Graph description
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) {
+        ogDescription.setAttribute('content', metaTags[lang].ogDescription);
+    }
+
+    // Update Twitter Card title
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) {
+        twitterTitle.setAttribute('content', metaTags[lang].ogTitle);
+    }
+
+    // Update Twitter Card description
+    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDescription) {
+        twitterDescription.setAttribute('content', metaTags[lang].ogDescription);
+    }
+
+    // Update html lang attribute
+    document.documentElement.setAttribute('lang', lang);
 }
 
 // Initialize language on page load
