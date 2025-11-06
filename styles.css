@@ -55,10 +55,23 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 3px;
     color: var(--text-dark);
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: inline-block;
 }
 
 .nav-links {
@@ -519,6 +532,15 @@ footer p {
     .logo {
         font-size: 16px;
         letter-spacing: 2px;
+        gap: 8px;
+    }
+
+    .logo-img {
+        height: 30px;
+    }
+
+    .logo-text {
+        font-size: 14px;
     }
 
     .nav-container {
