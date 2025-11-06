@@ -16,9 +16,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     if (window.scrollY > 100) {
-        nav.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
     } else {
-        nav.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
     }
 });
 
