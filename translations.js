@@ -50,7 +50,7 @@ const translations = {
         'contact.instagram': 'Suivez-nous sur Instagram',
 
         // Footer
-        'footer.copyright': '© 2024 Losanj Lab - Tous droits réservés'
+        'footer.copyright': '© 2025 Losanj Lab - Tous droits réservés'
     },
     en: {
         // Navigation
@@ -102,7 +102,7 @@ const translations = {
         'contact.instagram': 'Follow us on Instagram',
 
         // Footer
-        'footer.copyright': '© 2024 Losanj Lab - All rights reserved'
+        'footer.copyright': '© 2025 Losanj Lab - All rights reserved'
     }
 };
 
