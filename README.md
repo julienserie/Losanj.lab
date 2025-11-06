@@ -1,64 +1,83 @@
 # Site Web Losanj Lab
 
-Site professionnel pour Losanj Lab - Compositeur(ice)s de musiques pour la publicité.
+Site professionnel pour Losanj Lab - Compositeur(ice)s de musiques originales pour TV, publicité, films et séries.
 
-## Contenu du site
+## 🌐 Site en ligne
+
+- **Production** : https://www.losanj-lab.com (en cours de configuration)
+- **GitHub Pages** : https://julienserie.github.io/Losanj.lab/
+
+## 📋 Contenu du site
 
 - Page d'accueil avec présentation
+- Support bilingue (Français / English)
 - Portfolio avec 3 publicités :
   - McDonald's Happy Meal Sonic 3 (88 pays, 18M+ vues)
   - Krys - La Rencontre (France, Belgique, Suisse)
-  - GRTgaz - Le Chemin de la Transition Énergétique (1.8M vues)
+  - NATRAN (GRTgaz) - Le Chemin de la Transition Énergétique (1.8M vues)
 - Section À Propos
-- Page Contact
+- Page Contact avec liens sociaux (Instagram, LinkedIn)
 
-## Déploiement sur Netlify (GRATUIT)
+## 🚀 Hébergement
 
-### Méthode simple (Drag & Drop)
+**GitHub Pages** (gratuit, illimité)
+- Déploiement automatique depuis la branche `main`
+- CDN mondial pour performances optimales
+- SSL/HTTPS automatique
+- Aucune limite de bande passante
 
-1. **Créez un compte Netlify** (si pas déjà fait) :
-   - Allez sur https://www.netlify.com
-   - Cliquez sur "Sign up"
-   - Connectez-vous avec GitHub, GitLab ou email
+## 🎨 Design
 
-2. **Déployez votre site** :
-   - Une fois connecté, cliquez sur "Add new site" > "Deploy manually"
-   - GLISSEZ-DÉPOSEZ tous les fichiers de ce dossier dans la zone de dépôt
-   - Attendez 30 secondes... C'EST EN LIGNE ! 🎉
+- Thème minimaliste blanc
+- Design responsive (mobile-first)
+- Animations fluides au scroll
+- Vidéos intégrées avec lazy loading
+- Police : Helvetica Neue
 
-3. **Personnalisez votre URL** :
-   - Netlify vous donne une URL type : `random-name-123.netlify.app`
-   - Cliquez sur "Site settings" > "Change site name"
-   - Choisissez : `losanjlab.netlify.app` ou `losanj-lab.netlify.app`
+## 📂 Fichiers inclus
 
-### Ajouter un nom de domaine personnalisé (optionnel)
-
-Si vous voulez `www.losanjlab.com` :
-1. Achetez un domaine chez OVH, Gandi, etc. (~10€/an)
-2. Dans Netlify : "Domain settings" > "Add custom domain"
-3. Suivez les instructions pour pointer votre domaine
-
-## Fichiers inclus
-
-- `index.html` - Page principale
-- `styles.css` - Design et styles
+- `index.html` - Page principale avec support i18n
+- `styles.css` - Design minimaliste blanc
 - `script.js` - Interactions et animations
-- `McDonalds_Sonic_the_Hedgehog_3_Happy_Meal_commercial__With_Subtitles_.mp4`
-- `KRYS_LaCordee_30s_241104_PREMIX.mp4`
-- `GRTGAZ_Randonnee_30s_250123_MIXWEB.mp4`
+- `translations.js` - Système bilingue FR/EN
+- `mcdonalds-sonic-happy-meal.mp4`
+- `krys-la-rencontre.mp4`
+- `grtgaz-transition-energetique.mp4`
 
-## Modifications futures
+## 🌍 Domaine personnalisé
+
+- **Domaine** : losanj-lab.com (OVH)
+- **Email pro** : contact@losanj-lab.com (Zimbra Starter)
+- **Configuration DNS** : En cours
+
+## 🛠️ Modifications futures
 
 Pour modifier le site :
-1. Éditez les fichiers avec un éditeur de texte (VS Code, Sublime, etc.)
-2. Re-déployez sur Netlify (glissez-déposez à nouveau)
 
-Ou utilisez Claude pour vous aider !
+1. Éditez les fichiers localement
+2. Commit et push vers GitHub :
+   ```bash
+   git add .
+   git commit -m "Description des changements"
+   git push
+   ```
+3. GitHub Pages se met à jour automatiquement (1-2 minutes)
 
-## Contact
+## 📧 Contact
 
-Email : losanj.lab@gmail.com
+- **Email** : losanj.lab@gmail.com
+- **Instagram** : [@losanjlab](https://www.instagram.com/losanjlab/)
+- **LinkedIn** : [Losanj Lab](https://www.linkedin.com/in/losanj-lab-696a75395/)
+
+## 📝 Technologies
+
+- HTML5 sémantique
+- CSS3 (variables CSS, flexbox, animations)
+- JavaScript vanilla (ES6+)
+- Système i18n client-side
+- Git version control
+- GitHub Pages hosting
 
 ---
 
-✨ Votre site est prêt à être déployé !
+✨ Développé avec Claude Code - Novembre 2025
