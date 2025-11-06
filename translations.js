@@ -22,7 +22,7 @@ const translations = {
         'project1.link2': 'Voir la pub UK',
 
         // Project 2: Krys
-        'project2.description': "Une composition orchestrale spectaculaire qui marie la tension cinématographique de Christopher Nolan à l'épique de Hans Zimmer. Suspense palpitant et grandeur des sommets pour une publicité qui marque les esprits.",
+        'project2.description': "Une composition orchestrale spectaculaire qui marie la tension cinématographique d'un Christopher Nolan à la musique épique à la manière d'un Hans Zimmer. Suspense palpitant et grandeur des sommets pour une publicité qui marque les esprits.",
         'project2.tag1': 'Orchestral',
         'project2.tag2': 'Cinématique',
         'project2.tag3': 'Suspense',
@@ -75,7 +75,7 @@ const translations = {
         'project1.link2': 'Watch UK ad',
 
         // Project 2: Krys
-        'project2.description': "A spectacular orchestral composition that blends Christopher Nolan's cinematic tension with Hans Zimmer's epic scale. Thrilling suspense and mountain grandeur for an ad that leaves a lasting impression.",
+        'project2.description': "A spectacular orchestral composition that marries the cinematic tension of a Christopher Nolan with the epic music in the style of a Hans Zimmer. Thrilling suspense and mountain grandeur for an ad that leaves a lasting impression.",
         'project2.tag1': 'Orchestral',
         'project2.tag2': 'Cinematic',
         'project2.tag3': 'Suspense',
