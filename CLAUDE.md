@@ -246,6 +246,58 @@ curl -I https://www.losanj-lab.com
 **Action :** Compte Netlify supprimé par l'utilisateur
 **Raison :** Migration vers GitHub Pages (gratuit et illimité)
 
+### Optimisation SEO complète ✅
+
+**Meta tags ajoutés :**
+- **Title bilingue** :
+  - FR : "Compositeur(ice)s de musiques originales pour TV, publicité, films et séries"
+  - EN : "Songwriting and production lab for TV, advertising, film & series"
+- **Meta description** bilingue (change automatiquement avec langue)
+- **Open Graph tags** : Facebook, LinkedIn, WhatsApp (avec logo)
+- **Twitter Card tags** : Partages Twitter optimisés
+- **Keywords SEO** : compositeur musique, musique originale, publicité, TV, film, série
+- **Canonical URL** : https://www.losanj-lab.com/
+- **Hreflang tags** : Versions FR/EN pour Google
+
+**Fichiers SEO créés :**
+- `robots.txt` : Autorise indexation complète
+- `sitemap.xml` : Plan du site (4 URLs)
+- `google2e3540320613e098.html` : Vérification Google Search Console
+
+**Fonction JavaScript ajoutée :**
+- `updateMetaTags(lang)` : Met à jour dynamiquement title, description, og:tags quand on switch FR/EN
+
+**Fichiers modifiés :**
+- `index.html` : Meta tags complets dans <head>
+- `translations.js` : Fonction updateMetaTags()
+- Commit : 380b82e
+
+### Google Search Console configuré ✅
+
+**Propriété vérifiée :** https://www.losanj-lab.com
+**Compte administrateur :** jserie@gmail.com
+
+**Actions effectuées :**
+1. ✅ Propriété ajoutée et vérifiée (fichier HTML)
+2. ✅ Sitemap soumis : `sitemap.xml`
+3. ✅ Indexation demandée pour page d'accueil
+4. ✅ 4 pages découvertes par Google (/, #portfolio, #about, #contact)
+
+**État actuel (7 nov. 2025) :**
+- Sitemap : "Opération effectuée" ✅
+- Dernière lecture : 7 nov. 2025
+- Pages découvertes : 4
+- État indexation : Demandée et en cours
+
+**Délais attendus :**
+- Indexation complète : 1-3 jours
+- Affichage dans résultats Google : 3-7 jours
+- Logo dans résultats : 1-2 semaines
+
+**Commits :**
+- 380b82e : SEO meta tags + sitemap
+- 2f28022 : Google verification file
+
 ---
 
 ## Configuration à venir (en attente activation OVH) - COMPLÉTÉ ✅
