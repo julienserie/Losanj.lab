@@ -488,6 +488,12 @@ footer p {
 
     .project-description {
         font-size: 16px;
+        text-align: left;
+    }
+
+    .about-text p,
+    .about-text .intro {
+        text-align: left;
     }
 
     .project-stats {
@@ -538,5 +544,14 @@ footer p {
 
     .lang-separator {
         font-size: 10px;
+    }
+
+    .project-description {
+        text-align: left;
+    }
+
+    .about-text p,
+    .about-text .intro {
+        text-align: left;
     }
 }
