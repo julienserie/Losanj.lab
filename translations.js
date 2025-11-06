@@ -60,7 +60,7 @@ const translations = {
         'nav.contact': 'Contact',
 
         // Hero section
-        'hero.tagline': 'Based in France. Songwriting and production lab for TV, advertising, film & series',
+        'hero.tagline': 'Songwriting and production lab for TV, advertising, film & series',
         'hero.cta': 'Discover our creations',
 
         // Portfolio section
