@@ -407,12 +407,16 @@ footer p {
         font-size: 16px;
     }
 
+    .nav-container {
+        padding: 15px 10px;
+    }
+
     .nav-links {
-        gap: 20px;
+        gap: 12px;
     }
 
     .nav-links a {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .portfolio h2,
@@ -457,7 +461,15 @@ footer p {
         font-size: 18px;
     }
 
+    .nav-container {
+        padding: 15px 8px;
+    }
+
     .nav-links {
-        gap: 15px;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
     }
 }

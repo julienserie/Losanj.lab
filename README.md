@@ -1,6 +1,6 @@
 # Site Web Losanj Lab
 
-Site professionnel pour Losanj Lab - Compositeurs de musiques pour la publicité.
+Site professionnel pour Losanj Lab - Compositeur(ice)s de musiques pour la publicité.
 
 ## Contenu du site
 
