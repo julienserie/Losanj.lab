@@ -48,6 +48,7 @@ const translations = {
         'contact.title': 'Contact',
         'contact.subtitle': 'Discutons de votre prochain projet',
         'contact.instagram': 'Suivez-nous sur Instagram',
+        'contact.linkedin': 'Connectez-vous sur LinkedIn',
 
         // Footer
         'footer.copyright': '© 2025 Losanj Lab - Tous droits réservés'
@@ -100,6 +101,7 @@ const translations = {
         'contact.title': 'Contact',
         'contact.subtitle': "Let's discuss your next project",
         'contact.instagram': 'Follow us on Instagram',
+        'contact.linkedin': 'Connect on LinkedIn',
 
         // Footer
         'footer.copyright': '© 2025 Losanj Lab - All rights reserved'
