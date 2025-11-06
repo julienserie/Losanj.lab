@@ -511,30 +511,32 @@ footer p {
     }
 
     .logo {
-        font-size: 18px;
+        font-size: 16px;
+        letter-spacing: 2px;
     }
 
     .nav-container {
-        padding: 15px 8px;
+        padding: 15px 5px;
     }
 
     .nav-right {
-        gap: 10px;
+        gap: 8px;
     }
 
     .nav-links {
-        gap: 10px;
+        gap: 8px;
     }
 
     .nav-links a {
-        font-size: 12px;
+        font-size: 11px;
+        letter-spacing: 0.5px;
     }
 
     .lang-btn {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .lang-separator {
-        font-size: 11px;
+        font-size: 10px;
     }
 }
