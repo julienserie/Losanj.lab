@@ -151,6 +151,7 @@ nav {
     margin-bottom: 40px;
     letter-spacing: 2px;
     font-weight: 300;
+    text-align: center;
 }
 
 .cta-button {
@@ -240,6 +241,7 @@ nav {
     line-height: 1.8;
     margin-bottom: 30px;
     font-weight: 300;
+    text-align: justify;
 }
 
 /* Project Stats */
