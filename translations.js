@@ -7,7 +7,7 @@ const translations = {
         'nav.contact': 'Contact',
 
         // Hero section
-        'hero.tagline': 'Compositeur(ice)s de musiques originales pour TV, publicité et films.',
+        'hero.tagline': 'Compositeur(ice)s de musiques originales pour TV, publicité, films et séries.',
         'hero.cta': 'Découvrir nos créations',
 
         // Portfolio section
@@ -60,7 +60,7 @@ const translations = {
         'nav.contact': 'Contact',
 
         // Hero section
-        'hero.tagline': 'Based in France. Songwriting and production lab for TV, advertising & film',
+        'hero.tagline': 'Based in France. Songwriting and production lab for TV, advertising, film & series',
         'hero.cta': 'Discover our creations',
 
         // Portfolio section
