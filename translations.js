@@ -31,7 +31,7 @@ const translations = {
         'project2.link': 'Voir la publicité sur YouTube',
 
         // Project 3: NATRAN
-        'project3.description': "Une composition électro-ambiante qui évoque la liberté des grands espaces et l'harmonie avec la nature. Une bande-son futuriste et apaisante pour illustrer le chemin vers l'énergie renouvelable et un avenir durable.",
+        'project3.description': "Une composition électro French touch qui évoque la liberté des grands espaces et l'harmonie avec la nature. Une bande-son futuriste et apaisante pour illustrer le chemin vers l'énergie renouvelable et un avenir durable.",
         'project3.tag1': 'Electro',
         'project3.tag2': 'Ambient',
         'project3.tag3': 'Nature',
@@ -84,7 +84,7 @@ const translations = {
         'project2.link': 'Watch the ad on YouTube',
 
         // Project 3: NATRAN
-        'project3.description': "An electro-ambient composition evoking the freedom of wide-open spaces and harmony with nature. A futuristic and soothing soundtrack illustrating the path to renewable energy and a sustainable future.",
+        'project3.description': "An electro French touch composition evoking the freedom of wide-open spaces and harmony with nature. A futuristic and soothing soundtrack illustrating the path to renewable energy and a sustainable future.",
         'project3.tag1': 'Electro',
         'project3.tag2': 'Ambient',
         'project3.tag3': 'Nature',
