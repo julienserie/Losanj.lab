@@ -65,7 +65,7 @@ Pour modifier le site :
 
 ## 📧 Contact
 
-- **Email** : losanj.lab@gmail.com
+- **Email** : contact@losanj-lab.com
 - **Instagram** : [@losanjlab](https://www.instagram.com/losanjlab/)
 - **LinkedIn** : [Losanj Lab](https://www.linkedin.com/in/losanj-lab-696a75395/)
 
