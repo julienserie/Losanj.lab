@@ -79,6 +79,47 @@ nav {
     color: var(--primary-color);
 }
 
+/* Navigation Right (links + language switcher) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-gray);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0;
+    font-family: inherit;
+}
+
+.lang-btn:hover {
+    color: var(--primary-color);
+}
+
+.lang-btn.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.lang-separator {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -411,12 +452,20 @@ footer p {
         padding: 15px 10px;
     }
 
+    .nav-right {
+        gap: 15px;
+    }
+
     .nav-links {
         gap: 12px;
     }
 
     .nav-links a {
         font-size: 13px;
+    }
+
+    .lang-btn {
+        font-size: 12px;
     }
 
     .portfolio h2,
@@ -465,11 +514,23 @@ footer p {
         padding: 15px 8px;
     }
 
+    .nav-right {
+        gap: 10px;
+    }
+
     .nav-links {
         gap: 10px;
     }
 
     .nav-links a {
         font-size: 12px;
+    }
+
+    .lang-btn {
+        font-size: 11px;
+    }
+
+    .lang-separator {
+        font-size: 11px;
     }
 }
