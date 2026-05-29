@@ -39,6 +39,15 @@ const translations = {
         'project3.stat': 'Vues',
         'project3.link': 'Voir la publicité sur YouTube (1.8M vues)',
 
+        // Project 4: NATRAN 2026
+        'project4.description': "Convaincu par notre composition électro French touch pour sa campagne 2025, NATRAN nous sollicite à nouveau pour une version plus aérée et harmonieuse. Une bande-son améliorée qui souligne l'esprit d'équipe au service de l'énergie renouvelable et d'un avenir durable.",
+        'project4.tag1': 'Electro',
+        'project4.tag2': 'French Touch',
+        'project4.tag3': 'Aérien',
+        'project4.tag4': 'Harmonie',
+        'project4.stat': 'Nouvelle campagne 2026',
+        'project4.link': 'Voir la publicité sur YouTube',
+
         // About section
         'about.title': 'À Propos',
         'about.intro': "Losanj Lab est un collectif de compositeur(ice)s aux univers contrastés : pop, électro, urbain, variété, jazz, metal, orchestral. Ils se réunissent pour créer des musiques originales pour l'image, la publicité et les librairies musicales.",
@@ -91,6 +100,15 @@ const translations = {
         'project3.tag4': 'Futuristic',
         'project3.stat': 'Views',
         'project3.link': 'Watch the ad on YouTube (1.8M views)',
+
+        // Project 4: NATRAN 2026
+        'project4.description': "Won over by our electro French touch composition for its 2025 campaign, NATRAN called on us again for a more airy and harmonious version. An enhanced soundtrack that highlights the team spirit serving renewable energy and a sustainable future.",
+        'project4.tag1': 'Electro',
+        'project4.tag2': 'French Touch',
+        'project4.tag3': 'Airy',
+        'project4.tag4': 'Harmony',
+        'project4.stat': 'New 2026 campaign',
+        'project4.link': 'Watch the ad on YouTube',
 
         // About section
         'about.title': 'About',
