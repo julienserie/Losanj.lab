@@ -66,11 +66,32 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1>LOSANJ LAB</h1>
-            <p class="tagline" data-i18n="hero.tagline">Compositeur(ice)s de musiques originales pour TV, publicité, films et séries.</p>
-            <a href="#portfolio" class="cta-button" data-i18n="hero.cta">Découvrir nos créations</a>
+            <h1 class="hero-reveal">LOSANJ LAB</h1>
+            <p class="tagline hero-reveal" data-i18n="hero.tagline">Compositeur(ice)s de musiques originales pour TV, publicité, films et séries.</p>
+            <div class="equalizer hero-reveal" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-cta-group hero-reveal">
+                <a href="#contact" class="cta-button cta-primary" data-i18n="hero.ctaContact">Parlons de votre campagne</a>
+                <a href="#portfolio" class="cta-button cta-secondary" data-i18n="hero.cta">Découvrir nos créations</a>
+            </div>
         </div>
+        <a href="#trust" class="scroll-cue" aria-label="Défiler vers le bas"></a>
     </header>
+
+    <!-- Trust Band -->
+    <section id="trust" class="trust">
+        <div class="container">
+            <p class="trust-label" data-i18n="trust.label">Ils nous font confiance</p>
+            <div class="trust-logos">
+                <a href="#project-mcdonalds" class="trust-brand">McDonald's</a>
+                <span class="trust-sep" aria-hidden="true">·</span>
+                <a href="#project-krys" class="trust-brand">Krys</a>
+                <span class="trust-sep" aria-hidden="true">·</span>
+                <a href="#project-natran" class="trust-brand">NATRAN</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
@@ -79,7 +100,7 @@
             <p class="section-subtitle" data-i18n="portfolio.subtitle">Nos créations pour les plus grandes marques</p>
 
             <!-- Project 1: McDonald's -->
-            <div class="project">
+            <div class="project" id="project-mcdonalds">
                 <div class="project-video">
                     <video controls>
                         <source src="mcdonalds-sonic-happy-meal.mp4" type="video/mp4">
@@ -94,11 +115,11 @@
                     </p>
                     <div class="project-stats">
                         <div class="stat">
-                            <span class="stat-number">88</span>
+                            <span class="stat-number" data-target="88" data-suffix="">88</span>
                             <span class="stat-label" data-i18n="project1.stat1">Pays</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">18M+</span>
+                            <span class="stat-number" data-target="18" data-suffix="M+">18M+</span>
                             <span class="stat-label" data-i18n="project1.stat2">Vues</span>
                         </div>
                     </div>
@@ -114,7 +135,7 @@
             </div>
 
             <!-- Project 2: Krys -->
-            <div class="project">
+            <div class="project" id="project-krys">
                 <div class="project-video">
                     <video controls>
                         <source src="krys-la-rencontre.mp4" type="video/mp4">
@@ -148,7 +169,7 @@
             </div>
 
             <!-- Project 3: GRTgaz -->
-            <div class="project">
+            <div class="project" id="project-natran">
                 <div class="project-video">
                     <video controls>
                         <source src="grtgaz-transition-energetique.mp4" type="video/mp4">
@@ -170,7 +191,7 @@
                     </div>
                     <div class="project-stats">
                         <div class="stat">
-                            <span class="stat-number">1.8M+</span>
+                            <span class="stat-number" data-target="1.8" data-suffix="M+" data-decimals="1">1.8M+</span>
                             <span class="stat-label" data-i18n="project3.stat">Vues</span>
                         </div>
                     </div>
@@ -246,7 +267,8 @@
             <h2 data-i18n="contact.title">Contact</h2>
             <p class="section-subtitle" data-i18n="contact.subtitle">Discutons de votre prochain projet</p>
             <div class="contact-info">
-                <a href="mailto:contact@losanj-lab.com" class="contact-email">contact@losanj-lab.com</a>
+                <a href="mailto:contact@losanj-lab.com?subject=Projet%20de%20campagne%20%E2%80%93%20%5Bvotre%20marque%5D&body=Bonjour%20Losanj%20Lab%2C%0A%0AOn%20pr%C3%A9pare%20une%20campagne%20et%20on%20cherche%20une%20musique%20originale.%0A%0AMarque%20%2F%20projet%20%3A%20%0AType%20(pub%2C%20TV%2C%20film%2C%20s%C3%A9rie)%20%3A%20%0ADeadline%20%3A%20%0AR%C3%A9f%C3%A9rences%20%2F%20univers%20souhait%C3%A9%20%3A%20%0A%0AMerci%20!" class="contact-cta" data-i18n="contact.cta">Parlons de votre campagne</a>
+                <a href="mailto:contact@losanj-lab.com" class="contact-email-link">contact@losanj-lab.com</a>
             </div>
             <div class="social-links">
                 <a href="https://www.instagram.com/losanjlab/" target="_blank" rel="noopener noreferrer" class="social-link instagram">

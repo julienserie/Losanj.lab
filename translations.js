@@ -9,10 +9,14 @@ const translations = {
         // Hero section
         'hero.tagline': 'Compositeur(ice)s de musiques originales pour TV, publicité, films et séries.',
         'hero.cta': 'Découvrir nos créations',
+        'hero.ctaContact': 'Parlons de votre campagne',
+
+        // Trust band
+        'trust.label': 'Ils nous font confiance',
 
         // Portfolio section
         'portfolio.title': 'Portfolio',
-        'portfolio.subtitle': 'Nos créations pour les plus grandes marques',
+        'portfolio.subtitle': 'Des campagnes vues partout dans le monde',
 
         // Project 1: McDonald's
         'project1.description': "À l'occasion de la sortie du film Sonic 3 dans les cinémas du monde entier, Losanj Lab a composé la musique de la campagne publicitaire mondiale pour le Happy Meal exclusif McDonald's.",
@@ -55,12 +59,13 @@ const translations = {
 
         // Contact section
         'contact.title': 'Contact',
-        'contact.subtitle': 'Discutons de votre prochain projet',
+        'contact.subtitle': 'Un brief, une deadline, une envie de son ? Écrivez-nous, on répond vite.',
+        'contact.cta': 'Parlons de votre campagne',
         'contact.instagram': 'Suivez-nous sur Instagram',
         'contact.linkedin': 'Connectez-vous sur LinkedIn',
 
         // Footer
-        'footer.copyright': '© 2025 Losanj Lab - Tous droits réservés'
+        'footer.copyright': '© 2026 Losanj Lab - Tous droits réservés'
     },
     en: {
         // Navigation
@@ -71,10 +76,14 @@ const translations = {
         // Hero section
         'hero.tagline': 'Songwriting and production lab for TV, advertising, film & series',
         'hero.cta': 'Discover our creations',
+        'hero.ctaContact': "Let's talk about your campaign",
+
+        // Trust band
+        'trust.label': 'Trusted by',
 
         // Portfolio section
         'portfolio.title': 'Portfolio',
-        'portfolio.subtitle': 'Our creations for the biggest brands',
+        'portfolio.subtitle': 'Campaigns seen around the world',
 
         // Project 1: McDonald's
         'project1.description': "For the worldwide release of Sonic 3 in theaters, Losanj Lab composed the music for the global McDonald's exclusive Happy Meal advertising campaign.",
@@ -117,12 +126,13 @@ const translations = {
 
         // Contact section
         'contact.title': 'Contact',
-        'contact.subtitle': "Let's discuss your next project",
+        'contact.subtitle': "Got a brief, a deadline, a sound in mind? Drop us a line — we reply fast.",
+        'contact.cta': "Let's talk about your campaign",
         'contact.instagram': 'Follow us on Instagram',
         'contact.linkedin': 'Connect on LinkedIn',
 
         // Footer
-        'footer.copyright': '© 2025 Losanj Lab - All rights reserved'
+        'footer.copyright': '© 2026 Losanj Lab - All rights reserved'
     }
 };
 
