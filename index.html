@@ -21,14 +21,14 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Losanj Lab">
-<meta property="og:title" content="Losanj Lab — Maison de musique originale pour l'image">
+<meta property="og:title" content="Losanj Lab - Compositeur(ice)s de musiques originales">
 <meta property="og:description" content="Collectif de compositeur(ice)s de musiques originales pour TV, publicité, films et séries.">
 <meta property="og:image" content="https://www.losanj-lab.com/logo.png">
 <meta property="og:url" content="https://www.losanj-lab.com/">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Losanj Lab — Maison de musique originale pour l'image">
+<meta name="twitter:title" content="Losanj Lab - Compositeur(ice)s de musiques originales">
 <meta name="twitter:description" content="Collectif de compositeur(ice)s de musiques originales pour TV, publicité, films et séries.">
 <meta name="twitter:image" content="https://www.losanj-lab.com/logo.png">
 <meta name="twitter:url" content="https://www.losanj-lab.com/">
@@ -317,6 +317,17 @@ header.nav.scrolled{
 .mail-text{margin-top:24px;font-size:.92rem;color:var(--muted)}
 .mail-text a{border-bottom:1px solid var(--line);transition:border-color .3s}
 .mail-text a:hover{border-color:var(--accent)}
+.contact-sub{max-width:560px;margin:0 auto 40px;font-size:clamp(1rem,1.5vw,1.2rem);font-weight:300;color:var(--muted);line-height:1.6}
+
+/* ----------------- Hero CTAs ----------------- */
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:clamp(28px,4vh,40px)}
+.hero-cta a{display:inline-flex;align-items:center;font-size:.86rem;font-weight:500;letter-spacing:.04em;padding:14px 28px;border-radius:100px;border:1px solid var(--ink);transition:background .4s var(--ease),color .4s var(--ease),transform .4s var(--ease),border-color .4s var(--ease)}
+.hero-cta .primary{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.hero-cta .primary:hover{background:var(--accent-deep);border-color:var(--accent-deep);transform:translateY(-2px)}
+.hero-cta .secondary:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+
+/* About — paragraph spacing */
+.about .about-desc{margin-top:1.1em}
 
 /* ============================================================
    FOOTER
@@ -379,14 +390,14 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
     <span class="name">Losanj Lab</span>
   </a>
   <nav class="nav-links" id="navLinks">
-    <a href="#work" data-i18n="nav.work">Réalisations</a>
-    <a href="#about" data-i18n="nav.about">Le collectif</a>
+    <a href="#work" data-i18n="nav.work">Portfolio</a>
+    <a href="#about" data-i18n="nav.about">À Propos</a>
     <div class="lang-switch" role="group" aria-label="Langue / Language">
       <button type="button" id="langFr" data-lang="fr" aria-label="Français">FR</button>
       <span class="sep" aria-hidden="true">|</span>
       <button type="button" id="langEn" data-lang="en" aria-label="English">EN</button>
     </div>
-    <a href="#contact" class="nav-cta" data-i18n="nav.cta">Parlons-en</a>
+    <a href="#contact" class="nav-cta" data-i18n="nav.cta">Contact</a>
   </nav>
   <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -396,15 +407,15 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <div class="wrap">
-    <div class="hero-top reveal">
-      <span class="eyebrow" data-i18n="hero.eyebrow">Maison de musique originale</span>
-      <p class="hero-meta" data-i18n-html="hero.meta">Composition · Production · Sound design<br><strong>Paris — Monde entier</strong></p>
-    </div>
     <h1 class="reveal" id="heroTitle">
       <span class="line-mask"><span>Losanj</span></span>
       <span class="line-mask"><span><em>Lab.</em></span></span>
     </h1>
     <p class="hero-tagline reveal d2" data-i18n="hero.tagline">Compositeur(ice)s de musiques originales pour TV, publicité, films et séries.</p>
+    <div class="hero-cta reveal d3">
+      <a class="primary" href="#contact" data-i18n="hero.cta1">Parlons de votre campagne</a>
+      <a class="secondary" href="#work" data-i18n="hero.cta2">Découvrir nos créations</a>
+    </div>
   </div>
   <div class="scroll-hint reveal d3"><span data-i18n="hero.scroll">Défiler</span> <span class="bar"></span></div>
 </section>
@@ -412,8 +423,10 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
 <!-- ============ TRUST MARQUEE ============ -->
 <div class="trust" aria-label="Ils nous font confiance : McDonald's, Krys, NATRAN">
   <div class="marquee" aria-hidden="true">
-    <span>McDonald's</span><span>Krys</span><span>NATRAN</span><span>Sonic 3</span>
-    <span>McDonald's</span><span>Krys</span><span>NATRAN</span><span>Sonic 3</span>
+    <span>McDonald's</span><span>Krys</span><span>NATRAN</span>
+    <span>McDonald's</span><span>Krys</span><span>NATRAN</span>
+    <span>McDonald's</span><span>Krys</span><span>NATRAN</span>
+    <span>McDonald's</span><span>Krys</span><span>NATRAN</span>
   </div>
 </div>
 
@@ -421,10 +434,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
 <main class="wrap work" id="work">
   <div class="section-head reveal">
     <div>
-      <span class="eyebrow" data-i18n="work.eyebrow">Sélection</span>
-      <h2 data-i18n="work.title">Réalisations</h2>
+      <h2 data-i18n="work.title">Portfolio</h2>
     </div>
-    <span class="count" data-i18n="work.count">04 — Projets</span>
+    <span class="count" data-i18n="work.subtitle">Des campagnes vues partout dans le monde</span>
   </div>
 
   <!-- 01 — McDonald's -->
@@ -436,7 +448,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
       </div>
     </div>
     <div class="p-body">
-      <span class="p-tag" data-i18n="p1.tag">Campagne mondiale · Cinéma</span>
       <h3>McDonald's — Happy Meal Sonic 3</h3>
       <p data-i18n="p1.desc">À l'occasion de la sortie du film Sonic 3 dans les cinémas du monde entier, Losanj Lab a composé la musique de la campagne publicitaire mondiale pour le Happy Meal exclusif McDonald's.</p>
       <div class="p-stats">
@@ -445,7 +456,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
       </div>
       <div class="p-links">
         <a class="p-link solid" href="https://youtu.be/90GKEX6AEO8" target="_blank" rel="noopener noreferrer"><span data-i18n="p1.link.br">Brazil · 18M vues</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="p-link" href="https://youtu.be/A1_n59BukW8" target="_blank" rel="noopener noreferrer">UK <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="p-link" href="https://youtu.be/A1_n59BukW8" target="_blank" rel="noopener noreferrer"><span data-i18n="p1.link.uk">Voir la pub UK</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
   </article>
@@ -459,7 +470,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
       </div>
     </div>
     <div class="p-body">
-      <span class="p-tag" data-i18n="p2.tag">Orchestral · Cinématique</span>
       <h3>Krys — La Rencontre</h3>
       <p data-i18n="p2.desc">Une composition orchestrale spectaculaire qui marie la tension cinématographique d'un Christopher Nolan à la musique épique à la manière d'un Hans Zimmer. Suspense palpitant et grandeur des sommets pour une publicité qui marque les esprits.</p>
       <div class="chips">
@@ -467,7 +477,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
       </div>
       <p class="p-place" data-i18n="p2.place">France · Belgique · Suisse</p>
       <div class="p-links">
-        <a class="p-link solid" href="https://youtu.be/onEcajN3AAw" target="_blank" rel="noopener noreferrer"><span data-i18n="link.watch">Voir le film</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="p-link solid" href="https://youtu.be/onEcajN3AAw" target="_blank" rel="noopener noreferrer"><span data-i18n="p2.link">Voir la publicité sur YouTube</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
   </article>
@@ -481,7 +491,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
       </div>
     </div>
     <div class="p-body">
-      <span class="p-tag" data-i18n="p3.tag">Electro · French Touch</span>
       <h3>NATRAN (GRT GAZ) — Le Chemin de la Transition Énergétique</h3>
       <p data-i18n="p3.desc">Une composition électro French touch qui évoque la liberté des grands espaces et l'harmonie avec la nature. Une bande-son futuriste et apaisante pour illustrer le chemin vers l'énergie renouvelable et un avenir durable.</p>
       <div class="chips">
@@ -491,7 +500,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
         <div class="stat"><div class="n">1.8M+</div><div class="l" data-i18n="p3.stat.views">Vues</div></div>
       </div>
       <div class="p-links">
-        <a class="p-link solid" href="https://youtu.be/-RvBvHdZNJY" target="_blank" rel="noopener noreferrer"><span data-i18n="link.watch">Voir le film</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="p-link solid" href="https://youtu.be/-RvBvHdZNJY" target="_blank" rel="noopener noreferrer"><span data-i18n="p3.link">Voir la publicité sur YouTube (1.8M vues)</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
   </article>
@@ -506,14 +515,13 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
       </div>
     </div>
     <div class="p-body">
-      <span class="p-tag" data-i18n="p4.tag">Electro · French Touch</span>
       <h3>NATRAN — Nouvelle Campagne 2026</h3>
       <p data-i18n="p4.desc">Convaincu par notre composition électro French touch pour sa campagne 2025, NATRAN nous sollicite à nouveau pour une version plus aérée et harmonieuse. Une bande-son améliorée qui souligne l'esprit d'équipe au service de l'énergie renouvelable et d'un avenir durable.</p>
       <div class="chips">
         <span data-i18n="p4.chip1">Electro</span><span data-i18n="p4.chip2">French Touch</span><span data-i18n="p4.chip3">Aérien</span><span data-i18n="p4.chip4">Harmonie</span>
       </div>
       <div class="p-links">
-        <a class="p-link solid" href="https://youtu.be/CxpdGEfqJNM" target="_blank" rel="noopener noreferrer"><span data-i18n="link.watch">Voir le film</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="p-link solid" href="https://youtu.be/CxpdGEfqJNM" target="_blank" rel="noopener noreferrer"><span data-i18n="p4.link">Voir la publicité sur YouTube</span> <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
   </article>
@@ -523,15 +531,11 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
 <section class="about" id="about">
   <div class="wrap grid">
     <div class="reveal">
-      <span class="eyebrow" data-i18n="about.eyebrow">Le collectif</span>
-      <h2 data-i18n-html="about.title">Des univers <em>contrastés</em>, une seule exigence.</h2>
+      <h2 data-i18n="about.title">À Propos</h2>
     </div>
     <div class="reveal d1">
-      <p data-i18n-html="about.body">Losanj Lab est un collectif de compositeur(ice)s aux univers contrastés : pop, électro, urbain, variété, jazz, metal, orchestral. Ensemble, ils créent des musiques originales pour l'image, la publicité et les librairies musicales. Au service de marques comme <strong>McDonald's</strong>, <strong>Krys</strong> et <strong>NATRAN</strong>, le collectif allie créativité et exigence professionnelle pour des bandes-son sur mesure, puissantes et singulières.</p>
-      <div class="genres">
-        <span data-i18n="genre.pop">Pop</span><span data-i18n="genre.electro">Électro</span><span data-i18n="genre.urban">Urbain</span><span data-i18n="genre.variety">Variété</span>
-        <span data-i18n="genre.jazz">Jazz</span><span data-i18n="genre.metal">Metal</span><span data-i18n="genre.orchestral">Orchestral</span>
-      </div>
+      <p data-i18n="about.intro">Losanj Lab est un collectif de compositeur(ice)s aux univers contrastés : pop, électro, urbain, variété, jazz, metal, orchestral. Ils se réunissent pour créer des musiques originales pour l'image, la publicité et les librairies musicales.</p>
+      <p class="about-desc" data-i18n="about.description">Déjà au service de marques comme McDonald's, Krys ou Natran, le collectif allie créativité et exigence professionnelle pour imaginer des bandes-son sur mesure, puissantes et singulières.</p>
     </div>
   </div>
 </section>
@@ -539,10 +543,10 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <span class="eyebrow reveal" data-i18n="contact.eyebrow">Démarrer un projet</span>
-    <h2 class="reveal d1" data-i18n-html="contact.title">Parlons de votre <em>campagne</em>.</h2>
-    <a class="mail-cta reveal d2" href="mailto:contact@losanj-lab.com">
-      <span data-i18n="contact.cta">Écrivez-nous</span> <span class="arr">→</span>
+    <h2 class="reveal" data-i18n="contact.title">Contact</h2>
+    <p class="contact-sub reveal d1" data-i18n="contact.subtitle">Un brief, une deadline, une envie de son ? Écrivez-nous, on répond vite.</p>
+    <a class="mail-cta reveal d2" href="mailto:contact@losanj-lab.com?subject=Projet%20de%20campagne%20%E2%80%93%20%5Bvotre%20marque%5D&body=Bonjour%20Losanj%20Lab%2C%0A%0AOn%20pr%C3%A9pare%20une%20campagne%20et%20on%20cherche%20une%20musique%20originale.%0A%0AMarque%20%2F%20projet%20%3A%20%0AType%20(pub%2C%20TV%2C%20film%2C%20s%C3%A9rie)%20%3A%20%0ADeadline%20%3A%20%0AR%C3%A9f%C3%A9rences%20%2F%20univers%20souhait%C3%A9%20%3A%20%0A%0AMerci%20!">
+      <span data-i18n="contact.cta">Parlons de votre campagne</span> <span class="arr">→</span>
     </a>
     <p class="mail-text reveal d2"><a href="mailto:contact@losanj-lab.com">contact@losanj-lab.com</a></p>
   </div>
@@ -563,7 +567,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
         <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7 10v7M7 7.2v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
       </a>
     </div>
-    <span class="copy">© 2026 Losanj Lab</span>
+    <span class="copy" data-i18n="footer.copyright">© 2026 Losanj Lab - Tous droits réservés</span>
   </div>
 </footer>
 
@@ -576,86 +580,82 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:3
 
   var translations = {
     fr: {
-      "nav.work":"Réalisations",
-      "nav.about":"Le collectif",
-      "nav.cta":"Parlons-en",
-      "hero.eyebrow":"Maison de musique originale",
-      "hero.meta":"Composition · Production · Sound design<br><strong>Paris — Monde entier</strong>",
+      "nav.work":"Portfolio",
+      "nav.about":"À Propos",
+      "nav.cta":"Contact",
       "hero.tagline":"Compositeur(ice)s de musiques originales pour TV, publicité, films et séries.",
+      "hero.cta1":"Parlons de votre campagne",
+      "hero.cta2":"Découvrir nos créations",
       "hero.scroll":"Défiler",
-      "work.eyebrow":"Sélection",
-      "work.title":"Réalisations",
-      "work.count":"04 — Projets",
-      "p1.tag":"Campagne mondiale · Cinéma",
+      "work.title":"Portfolio",
+      "work.subtitle":"Des campagnes vues partout dans le monde",
       "p1.desc":"À l'occasion de la sortie du film Sonic 3 dans les cinémas du monde entier, Losanj Lab a composé la musique de la campagne publicitaire mondiale pour le Happy Meal exclusif McDonald's.",
       "p1.stat.countries":"Pays",
       "p1.stat.views":"Vues",
-      "p1.link.br":"Brazil · 18M vues",
-      "p2.tag":"Orchestral · Cinématique",
+      "p1.link.br":"Voir la pub Brazil (18M vues)",
+      "p1.link.uk":"Voir la pub UK",
       "p2.desc":"Une composition orchestrale spectaculaire qui marie la tension cinématographique d'un Christopher Nolan à la musique épique à la manière d'un Hans Zimmer. Suspense palpitant et grandeur des sommets pour une publicité qui marque les esprits.",
       "p2.chip1":"Orchestral","p2.chip2":"Cinématique","p2.chip3":"Suspense","p2.chip4":"Épique",
       "p2.place":"France · Belgique · Suisse",
-      "p3.tag":"Electro · French Touch",
+      "p2.link":"Voir la publicité sur YouTube",
       "p3.desc":"Une composition électro French touch qui évoque la liberté des grands espaces et l'harmonie avec la nature. Une bande-son futuriste et apaisante pour illustrer le chemin vers l'énergie renouvelable et un avenir durable.",
       "p3.chip1":"Electro","p3.chip2":"Ambient","p3.chip3":"Nature","p3.chip4":"Futuriste",
       "p3.stat.views":"Vues",
-      "p4.tag":"Electro · French Touch",
+      "p3.link":"Voir la publicité sur YouTube (1.8M vues)",
       "p4.desc":"Convaincu par notre composition électro French touch pour sa campagne 2025, NATRAN nous sollicite à nouveau pour une version plus aérée et harmonieuse. Une bande-son améliorée qui souligne l'esprit d'équipe au service de l'énergie renouvelable et d'un avenir durable.",
       "p4.chip1":"Electro","p4.chip2":"French Touch","p4.chip3":"Aérien","p4.chip4":"Harmonie",
       "p4.label":"Nouvelle campagne 2026",
-      "link.watch":"Voir le film",
-      "about.eyebrow":"Le collectif",
-      "about.title":"Des univers <em>contrastés</em>, une seule exigence.",
-      "about.body":"Losanj Lab est un collectif de compositeur(ice)s aux univers contrastés : pop, électro, urbain, variété, jazz, metal, orchestral. Ensemble, ils créent des musiques originales pour l'image, la publicité et les librairies musicales. Au service de marques comme <strong>McDonald's</strong>, <strong>Krys</strong> et <strong>NATRAN</strong>, le collectif allie créativité et exigence professionnelle pour des bandes-son sur mesure, puissantes et singulières.",
-      "genre.pop":"Pop","genre.electro":"Électro","genre.urban":"Urbain","genre.variety":"Variété","genre.jazz":"Jazz","genre.metal":"Metal","genre.orchestral":"Orchestral",
-      "contact.eyebrow":"Démarrer un projet",
-      "contact.title":"Parlons de votre <em>campagne</em>.",
-      "contact.cta":"Écrivez-nous",
+      "p4.link":"Voir la publicité sur YouTube",
+      "about.title":"À Propos",
+      "about.intro":"Losanj Lab est un collectif de compositeur(ice)s aux univers contrastés : pop, électro, urbain, variété, jazz, metal, orchestral. Ils se réunissent pour créer des musiques originales pour l'image, la publicité et les librairies musicales.",
+      "about.description":"Déjà au service de marques comme McDonald's, Krys ou Natran, le collectif allie créativité et exigence professionnelle pour imaginer des bandes-son sur mesure, puissantes et singulières.",
+      "contact.title":"Contact",
+      "contact.subtitle":"Un brief, une deadline, une envie de son ? Écrivez-nous, on répond vite.",
+      "contact.cta":"Parlons de votre campagne",
+      "footer.copyright":"© 2026 Losanj Lab - Tous droits réservés",
       "meta.title":"Losanj Lab — Compositeur(ice)s de musiques originales pour TV, publicité, films et séries",
       "meta.description":"Losanj Lab — Collectif de compositeur(ice)s de musiques originales pour la TV, la publicité, le cinéma et les séries. Au service de marques comme McDonald's, Krys et NATRAN.",
-      "meta.ogtitle":"Losanj Lab — Maison de musique originale pour l'image",
+      "meta.ogtitle":"Losanj Lab - Compositeur(ice)s de musiques originales",
       "meta.ogdescription":"Collectif de compositeur(ice)s de musiques originales pour TV, publicité, films et séries."
     },
     en: {
-      "nav.work":"Work",
-      "nav.about":"The collective",
-      "nav.cta":"Let's talk",
-      "hero.eyebrow":"Original music house",
-      "hero.meta":"Composition · Production · Sound design<br><strong>Paris — Worldwide</strong>",
-      "hero.tagline":"Original music for TV, advertising, film & series.",
+      "nav.work":"Portfolio",
+      "nav.about":"About",
+      "nav.cta":"Contact",
+      "hero.tagline":"Songwriting and production lab for TV, advertising, film & series",
+      "hero.cta1":"Let's talk about your campaign",
+      "hero.cta2":"Discover our creations",
       "hero.scroll":"Scroll",
-      "work.eyebrow":"Selection",
-      "work.title":"Work",
-      "work.count":"04 — Projects",
-      "p1.tag":"Global campaign · Cinema",
+      "work.title":"Portfolio",
+      "work.subtitle":"Campaigns seen around the world",
       "p1.desc":"For the worldwide release of Sonic 3 in theaters, Losanj Lab composed the music for the global McDonald's exclusive Happy Meal advertising campaign.",
       "p1.stat.countries":"Countries",
       "p1.stat.views":"Views",
-      "p1.link.br":"Brazil · 18M views",
-      "p2.tag":"Orchestral · Cinematic",
+      "p1.link.br":"Watch Brazil ad (18M views)",
+      "p1.link.uk":"Watch UK ad",
       "p2.desc":"A spectacular orchestral composition that marries the cinematic tension of a Christopher Nolan with the epic music in the style of a Hans Zimmer. Thrilling suspense and mountain grandeur for an ad that leaves a lasting impression.",
       "p2.chip1":"Orchestral","p2.chip2":"Cinematic","p2.chip3":"Suspense","p2.chip4":"Epic",
       "p2.place":"France · Belgium · Switzerland",
-      "p3.tag":"Electro · French Touch",
+      "p2.link":"Watch the ad on YouTube",
       "p3.desc":"An electro French touch composition evoking the freedom of wide-open spaces and harmony with nature. A futuristic and soothing soundtrack illustrating the path to renewable energy and a sustainable future.",
       "p3.chip1":"Electro","p3.chip2":"Ambient","p3.chip3":"Nature","p3.chip4":"Futuristic",
       "p3.stat.views":"Views",
-      "p4.tag":"Electro · French Touch",
+      "p3.link":"Watch the ad on YouTube (1.8M views)",
       "p4.desc":"Won over by our electro French touch composition for its 2025 campaign, NATRAN called on us again for a more airy and harmonious version. An enhanced soundtrack that highlights the team spirit serving renewable energy and a sustainable future.",
       "p4.chip1":"Electro","p4.chip2":"French Touch","p4.chip3":"Airy","p4.chip4":"Harmony",
       "p4.label":"New 2026 campaign",
-      "link.watch":"Watch the film",
-      "about.eyebrow":"The collective",
-      "about.title":"Contrasting <em>universes</em>, one single standard.",
-      "about.body":"Losanj Lab is a collective of composers with contrasting universes: pop, electro, urban, variety, jazz, metal, orchestral. Together, they create original music for film, advertising and music libraries. Working with brands such as <strong>McDonald's</strong>, <strong>Krys</strong> and <strong>NATRAN</strong>, the collective combines creativity and professional excellence to craft custom, powerful and unique soundtracks.",
-      "genre.pop":"Pop","genre.electro":"Electro","genre.urban":"Urban","genre.variety":"Variety","genre.jazz":"Jazz","genre.metal":"Metal","genre.orchestral":"Orchestral",
-      "contact.eyebrow":"Start a project",
-      "contact.title":"Let's talk about your <em>campaign</em>.",
-      "contact.cta":"Write to us",
-      "meta.title":"Losanj Lab — Original music for TV, advertising, film & series",
-      "meta.description":"Losanj Lab — Collective of composers creating original music for TV, advertising, film and series. Trusted by brands like McDonald's, Krys and NATRAN.",
-      "meta.ogtitle":"Losanj Lab — Original music for TV, advertising, film & series",
-      "meta.ogdescription":"Original music for TV, advertising, film & series."
+      "p4.link":"Watch the ad on YouTube",
+      "about.title":"About",
+      "about.intro":"Losanj Lab is a collective of composers with contrasting universes: pop, electro, urban, variety, jazz, metal, orchestral. They come together to create original music for film, advertising and music libraries.",
+      "about.description":"Already serving brands such as McDonald's, Krys and Natran, the collective combines creativity and professional excellence to create custom, powerful and unique soundtracks.",
+      "contact.title":"Contact",
+      "contact.subtitle":"Got a brief, a deadline, a sound in mind? Drop us a line — we reply fast.",
+      "contact.cta":"Let's talk about your campaign",
+      "footer.copyright":"© 2026 Losanj Lab - All rights reserved",
+      "meta.title":"Losanj Lab — Songwriting and production lab for TV, advertising, film & series",
+      "meta.description":"Losanj Lab — Songwriting and production lab for TV, advertising, film & series. Trusted by brands like McDonald's, Krys and NATRAN.",
+      "meta.ogtitle":"Losanj Lab — Songwriting and production lab",
+      "meta.ogdescription":"Songwriting and production lab for TV, advertising, film & series."
     }
   };
 
